@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex006</title>
+    <style>
+        body{
+            background-color: #ddd;
+        }
+        #area{
+            background-color: rgb(68, 68, 176);
+            color: white;
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var area = window.document.querySelector('#area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar(){
+            area.innerText = 'Clicou!'
+        }
+        function entrar(){
+            area.innerText = 'Entrou!'
+            area.style = 'background-color: green;'
+        }
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style = 'background-color: rgb(68, 68, 176);'
+        }
+    </script>
+</body>
+</html>
