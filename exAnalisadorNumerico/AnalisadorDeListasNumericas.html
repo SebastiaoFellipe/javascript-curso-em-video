@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Listas Númericas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header><h1>Analisador de Listas Númericas</h1></header>
+    <section>
+        <div class="caixa-entrada">
+            <span>Digite um número de 1 a 100:</span>
+            <input type="number" name="txtnumber" id="txtnumber">
+            <button type="button" onclick="adicionar()">Adicionar</button>
+        </div><br>
+        <span>Lista:</span><br>
+        <div class="caixa-lista">
+            <select disabled name="lista" id="lista"></select>
+            <div class="botoes">
+                <button type="button" onclick="analisar()">Analisar</button>
+                <button type="button" onclick="limpar()">Limpar</button>
+            </div>
+        </div>
+        <div id="resultado"></div>
+    </section>
+    <footer>&copy; Sebastião Fellipe</footer>
+</body>
+</html>

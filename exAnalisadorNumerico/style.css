@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #044b6b, #0c7a8a);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+header{
+    color: white;
+    text-align: center;
+    margin: 60px auto 20px auto;
+}
+section{
+    background-color: rgba(255,255,255,0.6);
+    padding: 1rem;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 10px;
+}
+section button{
+    padding: 0.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    padding: 0.4rem;
+}
+section button:hover{
+    background: linear-gradient(to right, #044b6b, #0c7a8a);
+    color: white;
+}
+.caixa-entrada input[type="number"]{
+   width: 100px;
+   padding: 0.2rem;
+}
+.caixa-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 120px;
+}
+#lista{
+    width: 100%;
+}
+#lista option{
+    padding-left: 2px;
+}
+.caixa-lista .botoes{
+    display: flex;
+    justify-content: space-between;
+}
+#resultado{
+    margin: 10px 0;
+}
+footer{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
